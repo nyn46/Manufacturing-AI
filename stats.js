@@ -1,0 +1,94 @@
+// Published figures with sources, shown in "Why this matters". Each was checked against the source page.
+// The quote field is the exact supporting text, kept for reference.
+window.STATS = [
+ {
+  "topic": "india-msme",
+  "number": "35.4%",
+  "plain": "Small and medium enterprises produce 35.4% of India's manufacturing output, according to the Economic Survey.",
+  "scope": "All-India manufacturing output; figure from the Government of India Economic Survey 2023–24",
+  "source": "Press Information Bureau (Ministry of Finance) — Share of MSMEs in manufacturing output stands at 35.4 per cent (2024)",
+  "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2034923",
+  "quote": "highlights the importance of the MSME sector in the Indian economy with an all-India manufacturing output of 35.4 percent."
+ },
+ {
+  "topic": "india-msme",
+  "number": "48.6%",
+  "plain": "MSMEs account for 48.6% of India's exports, nearly half of everything the country sells abroad.",
+  "scope": "India's total exports; figure from the Government of India Economic Survey 2025–26",
+  "source": "Press Information Bureau (Ministry of Electronics & IT) — \"Advancing AI Readiness and Adoption in Manufacturing MSMEs\" session at India AI Impact Summit 2026 (2026)",
+  "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2229286",
+  "quote": "According to the Economic Survey 2025–26, the MSME sector contributes approximately 31.1% of India's GDP, accounts for 35.4% of total manufacturing output, and 48.6% of the country's exports."
+ },
+ {
+  "topic": "downtime",
+  "number": "11% of revenue",
+  "plain": "The world's 500 biggest companies lose almost $1.4 trillion a year to unplanned downtime, equal to 11% of their revenue.",
+  "scope": "Siemens estimate for the Fortune Global 500, based on 181 online interviews with maintenance, engineering and IT staff at large industrial firms (automotive, FMCG, heavy industry, oil & gas), April 2019–March 2023",
+  "source": "Siemens — The True Cost of Downtime 2024 (2024)",
+  "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:1b43afb5-2d07-47f7-9eb7-893fe7d0bc59/TCOD-2024_original.pdf",
+  "quote": "We estimate that the world's 500 biggest companies lose almost $1.4 trillion annually through unplanned downtime, equivalent to 11% of their revenues."
+ },
+ {
+  "topic": "downtime",
+  "number": "27 hours a month",
+  "plain": "An average large plant still loses 27 hours a month to unplanned downtime.",
+  "scope": "Survey of 181 maintenance, engineering and IT professionals at large industrial organisations worldwide (automotive, FMCG, heavy industry, oil & gas), April 2019–March 2023",
+  "source": "Siemens — The True Cost of Downtime 2024 (2024)",
+  "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:1b43afb5-2d07-47f7-9eb7-893fe7d0bc59/TCOD-2024_original.pdf",
+  "quote": "An average large plant still loses 27 hours a month to unplanned downtime, down from 39 in 2019, but still more than a full day's production."
+ },
+ {
+  "topic": "quality",
+  "number": "5.0%",
+  "plain": "At the typical (median) company, scrap and rework cost 5% of the cost of goods sold.",
+  "scope": "APQC Open Standards Benchmarking, cross-industry median of 4,230 organisations (measure ID 105247; page undated, accessed November 2026)",
+  "source": "APQC — Scrap and rework costs as a percentage of cost of goods sold (benchmark measure, accessed 2026)",
+  "url": "https://www.apqc.org/what-we-do/benchmarking/open-standards-benchmarking/measures/scrap-and-rework-costs-percentage-cost",
+  "quote": "Scrap and rework costs as a percentage of cost of goods sold ... TOTAL SAMPLE SIZE: 4,230 All Companies ... MEDIAN 5.0%"
+ },
+ {
+  "topic": "energy",
+  "number": "20–30%",
+  "plain": "In energy-heavy MSME sectors like metals, ceramics, glass and brickmaking, energy can be as much as 20–30% of production cost.",
+  "scope": "Energy-intensive MSME sectors in India covered by the UNIDO/GEF MSME clusters energy-efficiency project",
+  "source": "UNIDO — Terms of Reference: Independent terminal evaluation, Promoting energy efficiency and renewable energy in selected MSME clusters in India (2022)",
+  "url": "https://downloads.unido.org/ot/30/75/30757574/TOR_Independent%20terminal%20evaluation.%20INDIA.%20Promoting%20energy%20efficiency%20and%20renewable%20energy%20in%20selected%20micro,%20small%20and%20medium%20enterprises%20(MSME)%20clusters%20in%20India%20(UNIDO%20project%20No.%20103029_%20GEF%20ID_%203553)%20(March%202022).pdf",
+  "quote": "In most of these MSME sectors, energy cost accounts for as much as 20-30% of the total cost of production."
+ },
+ {
+  "topic": "predictive-maintenance",
+  "number": "30–50%",
+  "plain": "Predictive maintenance typically cuts machine downtime by 30–50% and extends machine life by 20–40%.",
+  "scope": "McKinsey analysis of advanced analytics in manufacturing (an estimate, not a survey; published 2017)",
+  "source": "McKinsey & Company — Manufacturing: Analytics unleashes productivity and profitability (2017)",
+  "url": "https://www.mckinsey.com/capabilities/operations/our-insights/manufacturing-analytics-unleashes-productivity-and-profitability",
+  "quote": "Predictive maintenance typically reduces machine downtime by 30 to 50 percent and increases machine life by 20 to 40 percent."
+ },
+ {
+  "topic": "ai-adoption",
+  "number": "95%",
+  "plain": "95% of manufacturers have invested in AI or plan to within the next five years. Quality control is the top use.",
+  "scope": "Survey of 1,560 manufacturing managers and executives in 17 countries, companies with revenue from $100 million to over $30 billion, fielded March 2025",
+  "source": "Rockwell Automation — 10th annual State of Smart Manufacturing Report, press release (2025)",
+  "url": "https://www.rockwellautomation.com/en-gb/company/news/press-releases/Ninety-Five-Percent-of-Manufacturers-Are-Investing-in-AI-to-Navigate-Uncertainty-and-Accelerate-Smart-Manufacturing.html",
+  "quote": "95% of manufacturers have invested in, or plan to invest in, AI/ML over the next five years."
+ },
+ {
+  "topic": "pilot-purgatory",
+  "number": "More than 70%",
+  "plain": "More than 70% of manufacturing companies are stuck in pilot projects that never deliver measurable returns.",
+  "scope": "World Economic Forum and McKinsey assessment of the global manufacturing ecosystem (Global Lighthouse Network)",
+  "source": "World Economic Forum (with McKinsey & Company) — Global Lighthouse Network: Insights from the Forefront of the Fourth Industrial Revolution (2019)",
+  "url": "https://www3.weforum.org/docs/WEF_Global_Lighthouse_Network.pdf",
+  "quote": "more than 70% of the companies in the manufacturing ecosystem are falling further behind, with their Fourth Industrial Revolution efforts stuck in what we defined as \"pilot purgatory\""
+ },
+ {
+  "topic": "manual-data",
+  "number": "Up to 4 hours a shift",
+  "plain": "65% of frontline supervisors spend up to four hours per shift manually reconciling data from disconnected systems.",
+  "scope": "Survey of over 600 US manufacturing leaders, conducted by software company L2L",
+  "source": "L2L via PR Newswire — 74% of Manufacturers Caught in \"Data Chaos\" Despite Increasing Tech Spend (2026)",
+  "url": "https://www.prnewswire.com/news-releases/74-of-manufacturers-caught-in-data-chaos-despite-increasing-tech-spend-302774722.html",
+  "quote": "This execution gap forces 65% of frontline supervisors to waste up to four hours per shift manually reconciling disconnected data"
+ }
+];

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Where AI Fits</title>
+  <meta name="description" content="A field guide to 24 everyday factory processes: where work goes wrong, the questions to ask, and where AI can help — in plain English." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="research.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#/">Where AI fits<span>.</span></a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#/processes">24 processes</a>
+      <a href="#/map">How it connects</a>
+      <a href="#/problems">Top headaches</a>
+      <a href="#/checklist">Checklist</a>
+      <a href="#/sources">Research</a>
+    </nav>
+    <label class="top-ind"><span>Industry</span><select id="global-industry" aria-label="Your industry"></select></label>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-who"><strong id="author"></strong><span id="role"></span></p>
+      <p class="footer-contact" id="contact"></p>
+      <p class="footer-note">Before-and-after stories on this site are illustrations to explain ideas, not results from a specific factory. Every factory is different — a small trial is the honest way to find out.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="research.js"></script>
+  <script src="connections.js"></script>
+  <script src="industry-text.js"></script>
+  <script src="checklist.js"></script>
+  <script src="stats.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
