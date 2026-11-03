@@ -1,83 +1,61 @@
-# Manufacturing AI · Factory Opportunity Explorer
+# Where AI Fits
 
-Start with the work in your factory. Find where AI or automation could help before deciding what to build.
+A plain-English guide for factory owners: where AI can help across 24 everyday factory processes, what to ask before buying anything, and how to start small.
 
-An illustrated, interactive guide for factory owners and manufacturing teams. Explore 24 processes, adapt a filled-in sample factory, review candidate opportunities, and assess a sensible first pilot.
+**[Open the live site](https://nyn46.github.io/Manufacturing-AI/)** · Made by Nayansi Jain, AI consultant for manufacturing
 
-**[Open the live explorer](https://factory-opportunity-explorer.nayansi46.chatgpt.site/)** · Built by [Nayansi Jain](https://github.com/nyn46)
+![Factory illustration](assets/factory.webp)
 
-![Factory workflow illustration](dist/assets/factory.png)
+## What's inside
 
-## Features
+- **24 processes in 6 departments.** For each one: how the work is done today, where it goes wrong and why, where AI can help, the questions to ask, the records you need, who stays in charge, and what to measure.
+- **How the work connects.** A map of how one department's problem travels into the next, with four real-world "chain" stories per industry.
+- **Top 10 headaches.** Common factory problems such as breakdowns, defects, planning and paperwork, each linked to the processes behind it.
+- **Choose your industry.** Plastics, metal parts, foundry, textiles, food, electronics assembly, and chemicals and paints. The whole site rewords itself to fit, including process names, stories and headaches.
+- **Factory AI Readiness Checklist.** 18 yes/no checks that score whether a problem is ready for an AI trial. Use it on screen, or download the blank PDF.
+- **Why this matters.** 10 published figures from industry studies and government reports, each linked to its source.
+- **AI words in plain English.** A short glossary, so nobody can confuse you in a sales meeting.
 
-- **Explore opportunities:** choose an industry and browse six departments, 24 detailed processes, discovery questions, records needed, human approvals, possible benefits, and measures to check.
-- **Try your factory:** start with sample processes and illustrative records. Edit steps, tools, problems, and records; add, remove, or reorder processes; undo structural changes; export a JSON draft.
-- **Review matches:** reveal candidate opportunities and compare current workflows with proposed AI and automation workflows.
-- **My opportunity report:** assess frequency, manual effort, consequences, data access, ownership, integration, and existing software capabilities. Download an HTML report.
-- Practical examples of pattern analysis, scheduling decisions, supplier follow-up, and a daily attention list.
-- Responsive layouts, gentle entrance animations, scroll reveals, keyboard focus styles, reduced-motion support, and print controls.
+The before-and-after stories are illustrations to explain ideas, not results from a specific factory.
 
-## Run locally
+## Get in touch
 
-No framework, package installation, API key, or build step is required. Serve the static files over HTTP because the app uses JavaScript modules.
+- Email: ainayansi@gmail.com
+- Instagram: [@nayansiai](https://www.instagram.com/nayansiai/)
+
+## Run it on your computer
+
+It's a plain website: no installs and no build step.
 
 ```sh
 git clone https://github.com/nyn46/Manufacturing-AI.git
 cd Manufacturing-AI
-python3 -m http.server 8000 --directory dist
+python -m http.server 8001
 ```
 
-Open **http://localhost:8000** in a modern browser. On Windows, `py -m http.server 8000 --directory dist` also works when Python is installed.
+Then open http://localhost:8001.
 
-## Deploy
+## Files
 
-Upload the contents of `dist/` to a static host. The files are ready to serve as-is. There are no environment variables or server services to configure.
-
-| Setting | Value |
+| File | What it holds |
 | --- | --- |
-| Framework | None / static HTML |
-| Build command | None |
-| Publish directory | `dist` |
+| `index.html` | The page shell, top menu and footer |
+| `app.js` | Pages, navigation, industry switching and animations |
+| `data.js` | Your details, the 10 headaches, glossary and starter steps |
+| `research.js` | The 24 processes, 6 departments, industries and sources |
+| `connections.js` | Links between processes and the general chain stories |
+| `industry-text.js` | Industry-specific wording for every section |
+| `checklist.js` | The readiness checklist and scoring bands |
+| `stats.js` | The 10 cited figures |
+| `style.css`, `research.css` | Look, layout, motion and print styles |
+| `assets/` | Illustrations and the checklist PDF |
 
-For GitHub Pages, publish the contents of `dist/` using a Pages deployment workflow. Hash-based tabs require no server-side route rewrites. Linking this repository does not automatically update the existing ChatGPT-hosted site.
+To change wording, edit the matching `.js` file and push. The live site updates within a minute or two.
 
-## How suggestions work
+## Privacy
 
-Suggestions use **catalogue keyword matching**, not a live language model or an analysis of factory systems. Editing a process updates the catalogue matches. A match is a starting point to investigate, not proof that a bottleneck exists.
+There is no login, tracking or server. Your industry choice and checklist ticks are saved only in your own browser.
 
-Sample records are fictional, independent examples, not one reconciled factory dataset. Visitor descriptions are unverified. The readiness assessment uses visitor inputs; monthly manual effort is **not** guaranteed savings, cash payback, or a forecast. Decisions and approvals remain with authorised people.
+## Credits
 
-## Data and privacy
-
-Drafts and readiness assessments are stored in the current browser's `localStorage`. The application does not send these entries to an AI service and has no backend, analytics integration, or account system. Browser storage can be cleared or unavailable, so export anything you need to keep. Drafts do not sync across devices. External reference links open third-party websites.
-
-## Project structure
-
-| File | Purpose |
-| --- | --- |
-| `dist/index.html` | Four-tab interface |
-| `dist/style.css` | Responsive styling, print rules, and motion |
-| `dist/app.mjs` | Industry guide and examples |
-| `dist/data.mjs`, `dist/catalogue.mjs` | Process content and opportunity catalogue |
-| `dist/factory-editor.mjs` | Factory draft and JSON export |
-| `dist/opportunity-matcher.mjs` | Samples, validation, and keyword matching |
-| `dist/sample-records.mjs` | Illustrative records |
-| `dist/discovery.mjs` | Candidate workflows, readiness forms, HTML report |
-| `dist/assessment.mjs` | Readiness logic and manual-effort calculation |
-| `dist/motion.mjs` | Scroll reveals and tab transitions |
-| `dist/examples.mjs` | Practical examples |
-| `dist/assets/` | Factory and department illustrations |
-
-## Development checks
-
-With Node.js installed, check module syntax without installing dependencies:
-
-```sh
-for file in dist/*.mjs; do node --check "$file" || exit 1; done
-```
-
-Before publishing changes, check the four tabs, selectors, sample editing, matches, assessment inputs, exports, mobile layout, and reduced-motion behaviour in a browser.
-
-## Credits and reuse
-
-Created by Nayansi Jain. Illustrations were generated for this project. Process references are linked inside the guide. No open-source licence has been selected; public availability alone does not grant an unrestricted reuse licence.
+Created by Nayansi Jain. Illustrations were made for this project. Research sources are listed on the site. No open-source licence has been chosen, so please ask before reusing the content.
