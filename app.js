@@ -1,7 +1,7 @@
 (() => {
   const W = window;
   const { SITE, PROBLEMS, CHECKS, GLOSSARY, STEPS, WORRIES, PHASES, INDUSTRIES, CHECKPOINTS, SOURCES, PROCESSES, PLAIN, LINKS, RIPPLES, PROBLEM_PROCESSES, PHASE_IMAGES } = W;
-  const CHECKLIST = W.CHECKLIST || [], BANDS = W.CHECKLIST_BANDS || [], STATS = W.STATS || [];
+  const CHECKLIST = W.CHECKLIST || [], BANDS = W.CHECKLIST_BANDS || [], STATS = W.STATS || [], HOWTO = W.CHECKLIST_HOWTO || [];
   const main = document.getElementById("main");
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const pad = (n) => String(n).padStart(2, "0");
@@ -257,7 +257,7 @@
         <a class="checklist-promo" href="#/checklist" data-reveal>
           <span class="eyebrow">Free tool</span>
           <h3>The Factory AI Readiness Checklist</h3>
-          <p>${checklistCount} yes-or-no checks that tell you whether a problem is ready for an AI trial — and what to fix first. Tick it on screen or save it as a PDF.</p>
+          <p>${checklistCount} yes-or-no checks that tell you whether a problem is ready for an AI trial, what to fix first, and where AI can help at each step. Tick it on screen or save it as a PDF.</p>
           <span class="go">Open the checklist →</span>
         </a>` : ""}
       </section>
@@ -686,6 +686,11 @@
             <label>Who owns it<input id="cl-owner" type="text" maxlength="80" placeholder="e.g. Maintenance head" value="${esc(notes.owner)}" /></label>
           </div>
         </header>
+        ${HOWTO.length ? `
+          <section class="cl-howto" data-reveal>
+            <h2>How to use it</h2>
+            <ol>${HOWTO.map(([h, t], i) => `<li><span class="n">${i + 1}</span><div><h3>${esc(h)}</h3><p>${esc(t)}</p></div></li>`).join("")}</ol>
+          </section>` : ""}
         ${CHECKLIST.map((sec, si) => `
           <section class="cl-section" data-reveal>
             <h2><span>${si + 1}</span>${esc(sec.title)}</h2>
@@ -693,6 +698,7 @@
             <div class="cl-items">${sec.items.map((t) => { const i = k++; return `
               <button type="button" class="check cl-item" data-k="${i}" aria-pressed="${ticks.has(i)}"><span class="box" aria-hidden="true"></span><span>${esc(t)}</span></button>`; }).join("")}
             </div>
+            ${sec.ai ? `<div class="cl-ai"><strong>How AI can help here</strong>${esc(sec.ai)}</div>` : ""}
           </section>`).join("")}
         ${blankPdf ? "" : `<section class="cl-result" id="cl-result" aria-live="polite"></section>`}
         <section class="cl-key">

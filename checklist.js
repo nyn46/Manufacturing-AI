@@ -2,6 +2,7 @@
 window.CHECKLIST = [
   {
     title: "Is the problem worth solving?",
+    ai: "AI can read through your complaint emails, WhatsApp groups and breakdown notes and count which problem really comes up most. So you pick from facts, not gut feel. It can also give a rough cost from records you already keep.",
     note: "Pick one problem first. Everything below is about that one problem.",
     items: [
       "We can name one problem that costs us money or time every month.",
@@ -13,6 +14,7 @@ window.CHECKLIST = [
   },
   {
     title: "Do we have the records?",
+    ai: "This is where AI helps most. It can turn photos of paper registers, scanned PDFs and WhatsApp chats into one clean table, and spot where the same part or machine is written three different ways. Someone still checks what it produces.",
     note: "AI learns from examples. Paper, WhatsApp and spreadsheets all count.",
     items: [
       "The work is written down somewhere — software, a spreadsheet, WhatsApp or paper.",
@@ -24,6 +26,7 @@ window.CHECKLIST = [
   },
   {
     title: "Are our people ready?",
+    ai: "AI can sum up what each operator says, even in Hindi or another local language, and draft a short, plain note telling the team what the trial is and what won't change. The decisions stay with people.",
     note: "The best AI projects are built with the people who do the work.",
     items: [
       "We've asked the people who do this work what goes wrong and why.",
@@ -34,6 +37,7 @@ window.CHECKLIST = [
   },
   {
     title: "Are we set up to test it fairly?",
+    ai: "AI can help you check what Tally, your ERP or Excel can already do, draft a simple 4 to 8 week trial plan, and track the before-and-after numbers every week, so the result is clear rather than a feeling.",
     note: "A small, measured trial beats a big promise.",
     items: [
       "We know which software we use (Tally, ERP, Excel) and who looks after it.",
@@ -42,6 +46,14 @@ window.CHECKLIST = [
       "We've agreed how we'll measure the result before and after.",
     ],
   },
+];
+
+// How to work through the checklist, shown above the checks.
+window.CHECKLIST_HOWTO = [
+  ["Pick one problem", "Not \"use AI in the factory\". One problem, like \"Line 2 stops without warning\". Write it in the box above, with the person who owns it."],
+  ["Tick only what's true today", "Go through it with that person, in about five minutes. Don't tick what you plan to do. The unticked boxes are the useful part."],
+  ["Read your score", "The score tells you where you stand: fix the basics, get closer, or run a small trial. Each section also shows where AI can help with that step."],
+  ["Work on the gaps, then check again", "Take the unticked boxes one at a time. Most need no AI at all. Come back in a month and tick again."],
 ];
 
 window.CHECKLIST_BANDS = [

@@ -12,7 +12,7 @@ A plain-English guide for factory owners: where AI can help across 24 everyday f
 - **How the work connects.** A map of how one department's problem travels into the next, with four real-world "chain" stories per industry.
 - **Top 10 headaches.** Common factory problems such as breakdowns, defects, planning and paperwork, each linked to the processes behind it.
 - **Choose your industry.** Plastics, metal parts, foundry, textiles, food, electronics assembly, and chemicals and paints. The whole site rewords itself to fit, including process names, stories and headaches.
-- **Factory AI Readiness Checklist.** 18 yes/no checks that score whether a problem is ready for an AI trial. Use it on screen, or download the blank PDF.
+- **Factory AI Readiness Checklist.** 18 yes/no checks that score whether a problem is ready for an AI trial, with steps for how to use it and where AI can help in each section. Use it on screen, or download the blank PDF.
 - **Why this matters.** 11 published figures from industry studies and government reports, each linked to its source.
 - **AI words in plain English.** A short glossary, so nobody can confuse you in a sales meeting.
 
